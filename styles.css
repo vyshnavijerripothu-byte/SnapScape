@@ -241,3 +241,49 @@ h1 span { color: var(--coral-dark); font-style: italic; }
   .result-count { padding-bottom: 0; }
   .search-form button { min-width: 78px; }
 }
+
+
+/* Part 2 — image result cards */
+.card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 6px 0 #e8dfd2;
+}
+
+.result-link {
+  display: block;
+  overflow: hidden;
+  background: #e8e2d7;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.card:hover img {
+  transform: scale(1.035);
+}
+
+.result-caption {
+  margin: 0;
+  padding: 12px 14px 14px;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .card img { height: 165px; }
+}
