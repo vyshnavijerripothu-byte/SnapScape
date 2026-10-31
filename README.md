@@ -1,0 +1,3 @@
+# SnapScape
+
+SnapScape will become a simple image-discovery app where people can search for pictures by topic. I chose a warm coral-and-cream palette with a dark ink background to give the interface an editorial feel instead of copying the reference app. The topic chips make common searches easy to discover, while the empty-state message explains what belongs in the results area before the first search. This first version focuses on the responsive interface; image fetching will be added in the next part.
